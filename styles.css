@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+}
+
+#sudoku-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-gap: 2px;
+    margin-top: 10px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#analog-clock {
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    transform-origin: bottom center;
+    transform: rotate(90deg);
+}
+
+.hour-hand {
+    height: 50px;
+    top: 50px;
+    left: 99px;
+}
+
+.minute-hand {
+    height: 70px;
+    top: 30px;
+    left: 99px;
+}
+
+.second-hand {
+    height: 90px;
+    top: 10px;
+    left: 99px;
+    background-color: red;
+}
+
+#digital-clock {
+    font-size: 24px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
